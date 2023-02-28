@@ -70,5 +70,5 @@ if AUTO_DELETE == "True":
 
 #Sample
 SHORTNER_SITE = "tnlink.in"
-SHORTNER_API = "0a098aa40c88afa982fb8e2ff9aa8b731e712f8c"
+SHORTNER_API = "f363ff85fb26e96d55ac3e664b05d2cfe4fc8985"
 
