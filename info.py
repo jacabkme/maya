@@ -14,30 +14,30 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '26364421'))
 API_HASH = environ.get('API_HASH', '72c7598f883fa1b077358d6c86071654')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5763638816:AAGVD5Cujl_jr00PjnP2s9Fc8k7nPsJnQW8')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6207706023:AAEGNe8bnGZOMfIy_2ca0GHyiorrGfkckUg')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://pasteboard.co/iTV9WsyEu079.jpg https://pasteboard.co/rsLHLDz7Au0Y.jpg https://pasteboard.co/4CuLohR1PwBm.jpg https://pasteboard.co/EBXRng9LzrDo.jpg https://pasteboard.co/KMZFi83vIq1b.jpg https://pasteboard.co/8GosXNaPggzR.jpg https://pasteboard.co/ljMCxgoyJkD1.jpg')).split()
+PICS = (environ.get('PICS', 'https://pasteboard.co/B5veRBATuJ0N.jpg https://pasteboard.co/zflfZr6pzHAY.jpg https://pasteboard.co/tAbF2dzFIK2J.jpg https://pasteboard.co/Fy8NgxCfF0zy.jpg https://pasteboard.co/vU2pzHFDj1bA.jpg https://pasteboard.co/HU3t5ZmOxman.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1823620269 1546983881 1738851213').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001666032290').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001803981314').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001674217904')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001742838735')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://random:random@cluster0.tb63h.mongodb.net/cluster0?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "irobot3")
+DATABASE_NAME = environ.get('DATABASE_NAME', "mayazo")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001666032290'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001710006830')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001642275581'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001839858797')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
@@ -69,6 +69,6 @@ if AUTO_DELETE == "True":
     AUTO_DELETE = True
 
 #Sample
-SHORTNER_SITE = "tnlink.in"
-SHORTNER_API = "f363ff85fb26e96d55ac3e664b05d2cfe4fc8985"
+SHORTNER_SITE = "tinyfy.in"
+SHORTNER_API = "4586543b62d83c4266041239581b1efdb08b26b3"
 
